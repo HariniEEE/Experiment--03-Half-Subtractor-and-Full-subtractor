@@ -33,30 +33,40 @@ Write the detailed procedure here
 
 
 ## Program:
-/*
-Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming.
+
 
 HALF SUBTRACTOR:
 
 module HalfSub(a,b,difference,borrow);
+
 input a,b;
+
 output difference,borrow;
+
 assign difference=(a^b);
+
 assign borrow=(~a&b);
+
 endmodule
 
 FULL SUBTRACTOR: 
 
 module FullSub(a,b,c,difference,borrow);
+
 input a,b,c;
+
 output difference,borrow;
+
 assign borrow=(~a&(b^c)|(b&c));
+
 assign difference=(a^b^c);
+
 endmodule
 
 Developed by: Harini.E 
+
 RegisterNumber: 212222050017
-*/
+
 
 LOGIC GATES
 ![Logic gates](https://user-images.githubusercontent.com/128949246/232283443-697de70c-a5de-4324-9c48-aebfa8500624.jpeg)
